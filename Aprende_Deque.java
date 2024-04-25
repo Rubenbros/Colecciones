@@ -9,7 +9,7 @@ import java.util.Iterator;
  * como una pila (último en entrar, primero en salir).
  */
 
-public class Aprender_Deque {
+public class Aprende_Deque {
 
 	public static void main(String[] args) {
 
