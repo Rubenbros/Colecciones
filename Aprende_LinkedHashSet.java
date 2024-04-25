@@ -151,9 +151,7 @@ public class Aprende_LinkedHashSet {
 		 * elementos de la colección invocadora.
 		 */
 
-		// demoSet = [5,
-
-		3, 9]
+		// demoSet = [5, 3, 9]
 		demoSet.clear();
 		// demoSet = []
 

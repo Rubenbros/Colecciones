@@ -133,9 +133,7 @@ public class Aprende_TreeMap {
 		if (studentMap.containsValue("Pankaj"))
 			System.out.println("Valor encontrado");
 		else
-			System.out.println("
-
-					Valor no encontrado");
+			System.out.println("Valor no encontrado");
 
 					/*
 					 * Reemplazar valores en TreeMap

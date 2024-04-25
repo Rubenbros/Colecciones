@@ -146,68 +146,67 @@ public class Aprende_LinkedHashMap {
 		System.out.println("oldName = " + oldName); // oldName = Ronit
 
 		System.out.println("studentMap = " + studentMap);
-		// studentMap = {1=Naman, 2=Vivek
+		// studentMap = {1=Naman, 2=Vivek, 3=Sejal, 5=Anupam}
 
-, 3=Sejal, 5=Anupam}
+		/*
+		 * Obtener el recuento de pares clave-valor en LinkedHashMap
+		 *
+		 * int size(): Declarado en la interfaz 'Map'. Devuelve el número de pares
+		 * clave-valor en el mapa.
+		 */
 
-	/*
-	 * Obtener el recuento de pares clave-valor en LinkedHashMap
-	 *
-	 * int size(): Declarado en la interfaz 'Map'. Devuelve el número de pares
-	 * clave-valor en el mapa.
-	 */
+		int mapSize = studentMap.size();
 
-	int mapSize = studentMap.size();
+		System.out.println("mapSize = " + mapSize); // mapSize = 4
 
-        System.out.println("mapSize = " + mapSize); // mapSize = 4
+		/*
+		 * Comprobar si LinkedHashMap está vacío o no
+		 *
+		 * boolean isEmpty(): Declarado en la interfaz 'Map'. Devuelve true si el
+		 * mapa invocador está vacío. De lo contrario, devuelve false.
+		 */
 
-	/*
-	 * Comprobar si LinkedHashMap está vacío o no
-	 *
-	 * boolean isEmpty(): Declarado en la interfaz 'Map'. Devuelve true si el
-	 * mapa invocador está vacío. De lo contrario, devuelve false.
-	 */
+		if (studentMap.isEmpty())
+			System.out.println("El mapa está vacío");
+		else
+			System.out.println("El mapa no está vacío");
 
-        if (studentMap.isEmpty())
-				System.out.println("El mapa está vacío");
-        else
-				System.out.println("El mapa no está vacío");
+		/*
+		 * Iterar sobre las entradas de LinkedHashMap
+		 *
+		 * Set<Map.Entry<K, V>> entrySet(): Declarado en la interfaz 'Map'. Devuelve
+		 * un conjunto que contiene las entradas en el mapa. El conjunto contiene
+		 * objetos de tipo Map.Entry, es decir, este método proporciona una vista de
+		 * conjunto del mapa invocador.
+		 */
 
-	/*
-	 * Iterar sobre las entradas de LinkedHashMap
-	 *
-	 * Set<Map.Entry<K, V>> entrySet(): Declarado en la interfaz 'Map'. Devuelve
-	 * un conjunto que contiene las entradas en el mapa. El conjunto contiene
-	 * objetos de tipo Map.Entry, es decir, este método proporciona una vista de
-	 * conjunto del mapa invocador.
-	 */
+		Set<Map.Entry<Integer, String>> mapSet = studentMap.entrySet();
 
-	Set<Map.Entry<Integer, String>> mapSet = studentMap.entrySet();
+		for (Map.Entry<Integer, String> kv : mapSet) {
+			System.out.print(kv.getKey() + " -> " + kv.getValue() + " ");
+		}
+		// 1 -> Naman 2 -> Vivek 3 -> Sejal 5 -> Anupam
 
-        for (Map.Entry<Integer, String> kv : mapSet) {
-		System.out.print(kv.getKey() + " -> " + kv.getValue() + " ");
+		System.out.println();
+
+		for (Map.Entry kv : studentMap.entrySet()) {
+			System.out.print(kv.getKey() + " -> " + kv.getValue() + " ");
+		}
+		// 1 -> Naman 2 -> Vivek 3 -> Sejal 5 -> Anupam
+
+		System.out.println();
+
+		/*
+		 * Eliminar todos los pares clave-valor de LinkedHashMap
+		 *
+		 * void clear(): Declarado en la interfaz 'Map'. Elimina todos los pares
+		 * clave-valor del mapa invocador.
+		 */
+
+		studentMap.clear();
+
+		System.out.println("studentMap = " + studentMap);
+		// studentMap = {}
+
 	}
-	// 1 -> Naman 2 -> Vivek 3 -> Sejal 5 -> Anupam
-
-        System.out.println();
-
-        for (Map.Entry kv : studentMap.entrySet()) {
-		System.out.print(kv.getKey() + " -> " + kv.getValue() + " ");
-	}
-	// 1 -> Naman 2 -> Vivek 3 -> Sejal 5 -> Anupam
-
-        System.out.println();
-
-	/*
-	 * Eliminar todos los pares clave-valor de LinkedHashMap
-	 *
-	 * void clear(): Declarado en la interfaz 'Map'. Elimina todos los pares
-	 * clave-valor del mapa invocador.
-	 */
-
-        studentMap.clear();
-
-        System.out.println("studentMap = " + studentMap);
-	// studentMap = {}
-
 }
