@@ -143,7 +143,7 @@ ce en 'v' y se devuelve el valor anterior.
          * De lo contrario, se devuelve null.
          */
 
-		// studentMap = {1=Naman, 2=Vivek, 3=Ronit, 5=Anupam}
+		// studentMap = {1=Naman, 2=Vivek, 3=Payal, 5=Anupam}
 
 		studentMap.replace(3, "Payal", "Sejal");
 		// studentMap = {1=Naman, 2=Vivek, 3=Sejal, 5=Anupam}
